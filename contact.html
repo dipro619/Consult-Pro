@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConsultPro | Contact</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- loading screen -->
+  <div id="loader"><div class="loader-content">ConsultPro</div></div>
+  
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">Consult<span>Pro</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="cases.html">Case Studies</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+  </nav>
+  
+  <!-- mobile menu panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <!-- back to top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <h1>Get in <span>touch</span></h1>
+    <p style="max-width:700px; margin:1rem auto;">Ready to start a conversation? Reach out and our team will respond within one business day.</p>
+  </section>
+
+  <!-- Contact Grid: Form + Info -->
+  <section class="section">
+    <div class="contact-grid">
+      <!-- LEFT: CONTACT FORM with floating labels -->
+      <div>
+        <h2 class="section-title">Send us a message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">Full name *</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email">Email address *</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder=" ">
+            <label for="phone">Phone number</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="company" placeholder=" ">
+            <label for="company">Company</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder=" " required></textarea>
+            <label for="message">How can we help? *</label>
+          </div>
+          <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send message</button>
+          <div id="successMessage" class="success-popup">✓ Message sent! We'll be in touch soon.</div>
+        </form>
+      </div>
+
+      <!-- RIGHT: OFFICE DETAILS + HOURS + SOCIAL -->
+      <div>
+        <div class="info-card">
+          <h3 style="margin-bottom:1.5rem;">London office</h3>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>10-12 Leadenhall Street<br>London, EC3V 4LP, United Kingdom</div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>+44 20 7946 0138</div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>hello@consultpro.com</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 style="margin-bottom:1rem;">Business hours</h3>
+          <div class="hours-grid">
+            <div><strong>Mon–Thu</strong></div><div>9:00 – 18:00</div>
+            <div><strong>Friday</strong></div><div>9:00 – 17:00</div>
+            <div><strong>Saturday</strong></div><div>Closed</div>
+            <div><strong>Sunday</strong></div><div>Closed</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 style="margin-bottom:1rem;">Connect with us</h3>
+          <div class="contact-social">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOOGLE MAP (embedded) -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.302412105757!2d-0.082488684230311!3d51.51322211710868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035150b8a7a7%3A0x7a6d1b8c5d8a8d8a!2sLeadenhall%20St%2C%20London!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER (identical) -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color:white;">ConsultPro</h4>
+        <p><i class="fas fa-map-marker-alt contact-item"></i> 10-12 Leadenhall St, London</p>
+        <p><i class="fas fa-phone-alt contact-item"></i> +44 20 7946 0138</p>
+        <p><i class="fas fa-envelope contact-item"></i> hello@consultpro.com</p>
+      </div>
+      <div>
+        <h4 style="color:white;">Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <h4 style="color:white;">Follow us</h4>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="newsletter-card">
+        <h4>Newsletter</h4>
+        <p style="margin-bottom:1rem;">Get insights monthly</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:3rem;">© 2025 ConsultPro. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

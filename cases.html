@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConsultPro | Case Studies</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- loading screen -->
+  <div id="loader"><div class="loader-content">ConsultPro</div></div>
+  
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">Consult<span>Pro</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="cases.html" class="active">Case Studies</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+  </nav>
+  
+  <!-- mobile menu panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <!-- back to top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Case Studies Hero -->
+  <section class="cases-hero">
+    <h1>Success <span>stories</span></h1>
+    <p style="max-width:700px; margin:1rem auto;">Real results for real clients — see how we’ve helped businesses transform.</p>
+  </section>
+
+  <!-- Filter bar (category) -->
+  <div style="max-width:1300px; margin:0 auto; padding:0 2rem;">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="finance">Finance</button>
+      <button class="filter-btn" data-filter="tech">Technology</button>
+      <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+      <button class="filter-btn" data-filter="industry">Industry</button>
+    </div>
+  </div>
+
+  <!-- Case Studies Grid -->
+  <section class="section" style="padding-top:0;">
+    <div class="cases-grid" id="casesGrid">
+      <!-- case cards will be injected via JS, but we include static fallback -->
+    </div>
+  </section>
+
+  <!-- Featured / highlighted case study -->
+  <section class="section">
+    <div class="featured-case">
+      <div class="featured-img"></div>
+      <div>
+        <span style="color:var(--gold); font-weight:700;">FEATURED</span>
+        <h2 style="font-size:2.5rem; margin:0.5rem 0;">Global manufacturer digital overhaul</h2>
+        <p>Unified 14 legacy systems, reduced operational cost by 28%, and increased output by 43%.</p>
+        <div style="display:flex; gap:2rem; margin:2rem 0;">
+          <div><span class="featured-stat">€40M</span><br>savings</div>
+          <div><span class="featured-stat">28%</span><br>cost reduction</div>
+        </div>
+        <a href="#" class="btn-small">Read full study <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (identical) -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color:white;">ConsultPro</h4>
+        <p><i class="fas fa-map-marker-alt contact-item"></i> 10-12 Leadenhall St, London</p>
+        <p><i class="fas fa-phone-alt contact-item"></i> +44 20 7946 0138</p>
+        <p><i class="fas fa-envelope contact-item"></i> hello@consultpro.com</p>
+      </div>
+      <div>
+        <h4 style="color:white;">Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <h4 style="color:white;">Follow us</h4>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="newsletter-card">
+        <h4>Newsletter</h4>
+        <p style="margin-bottom:1rem;">Get insights monthly</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:3rem;">© 2025 ConsultPro. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConsultPro | corporate consultancy</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- loading screen -->
+  <div id="loader"><div class="loader-content">ConsultPro</div></div>
+  <!-- navbar with progress -->
+  <nav class="navbar">
+    <div class="logo">Consult<span>Pro</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="cases.html">Case Studies</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+  </nav>
+  <!-- mobile menu panel (hidden by default) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <!-- back to top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="floating-shape"></div>
+    <div class="floating-shape floating-shape2"></div>
+    <div class="hero-content">
+      <h1>Strategic Solutions for <span>Sustainable Business</span> Growth</h1>
+      <p>Data-driven strategies, expert advisory, and measurable results – trusted by 150+ global companies.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Get Consultation</a>
+        <a href="service.html" class="btn btn-outline">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW (with counters animation) -->
+  <section id="about" class="section">
+    <div class="about-preview">
+      <div class="about-img" data-animate="slideLeft"></div>
+      <div class="about-text" data-animate="fadeRight">
+        <h2 class="section-title">About ConsultPro</h2>
+        <p>We merge deep industry expertise with innovative approaches. Our team has been shaping the future of finance, operations, and digital transformation for over a decade.</p>
+        <div class="counters">
+          <div class="counter-item"><h3 class="counter" data-target="150">0</h3><p>Clients</p></div>
+          <div class="counter-item"><h3 class="counter" data-target="10">0</h3><p>Years</p></div>
+          <div class="counter-item"><h3 class="counter" data-target="25">0</h3><p>Experts</p></div>
+          <div class="counter-item"><h3 class="counter" data-target="300">0</h3><p>Projects</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES CARDS -->
+  <section id="services" class="section">
+    <h2 class="section-title">Our expertise</h2>
+    <div class="services-grid">
+      <div class="service-card"><i class="fas fa-chart-line"></i><h3>Business Strategy</h3><p>Growth & market entry</p></div>
+      <div class="service-card"><i class="fas fa-coins"></i><h3>Financial Advisory</h3><p>M&A, restructuring</p></div>
+      <div class="service-card"><i class="fas fa-search"></i><h3>Market Research</h3><p>Data intelligence</p></div>
+      <div class="service-card"><i class="fas fa-users"></i><h3>HR Consulting</h3><p>Talent & culture</p></div>
+      <div class="service-card"><i class="fas fa-robot"></i><h3>Digital Transformation</h3><p>AI & automation</p></div>
+      <div class="service-card"><i class="fas fa-chart-pie"></i><h3>Risk Management</h3><p>Compliance & control</p></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US (animated icons) -->
+  <section class="section" style="background: var(--light-bg); border-radius: 80px;">
+    <h2 class="section-title">Why choose ConsultPro</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem;">
+      <div data-animate="fadeUp"><i class="fas fa-user-tie" style="font-size:3rem;color:var(--gold);"></i><h3>Expert Team</h3></div>
+      <div data-animate="fadeUp"><i class="fas fa-trophy" style="font-size:3rem;color:var(--gold);"></i><h3>Proven Results</h3></div>
+      <div data-animate="fadeUp"><i class="fas fa-chart-bar" style="font-size:3rem;color:var(--gold);"></i><h3>Data-Driven</h3></div>
+      <div data-animate="fadeUp"><i class="fas fa-handshake" style="font-size:3rem;color:var(--gold);"></i><h3>Client-Focused</h3></div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="cases" class="section">
+    <h2 class="section-title">Success stories</h2>
+    <div class="case-grid">
+      <div class="case-item"><img class="case-img" src="2.jpg" alt=""><div class="overlay"><h4>FinTech scale-up</h4><p>+180% revenue</p><a href="#" class="btn-small">View details</a></div></div>
+      <div class="case-item"><img class="case-img" src="3.jpg" alt=""><div class="overlay"><h4>Global manufacturer</h4><p>€40M cost saved</p><a href="#" class="btn-small">View details</a></div></div>
+      <div class="case-item"><img class="case-img" src="4.jpg" alt=""><div class="overlay"><h4>HealthTech entry</h4><p>market leader in 2 yrs</p><a href="#" class="btn-small">View details</a></div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL CAROUSEL WITH ARROWS -->
+  <section class="section">
+    <h2 class="section-title">Client stories</h2>
+    <div class="carousel-container">
+      <button class="carousel-arrow left" id="carouselLeft"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel" id="testimonialCarousel">
+        <div class="testimonial"><p>"ConsultPro transformed our strategic direction."</p><h4>— Maria Sanchez, CEO</h4></div>
+        <div class="testimonial"><p>"Their financial modelling saved us millions."</p><h4>— James Wu, CFO</h4></div>
+        <div class="testimonial"><p>"Top notch digital transformation experts."</p><h4>— Aisha Khan, COO</h4></div>
+        <div class="testimonial"><p>"They helped us enter new markets smoothly."</p><h4>— David Chen, Founder</h4></div>
+      </div>
+      <button class="carousel-arrow right" id="carouselRight"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section id="blog" class="section">
+    <h2 class="section-title">Latest insights</h2>
+    <div class="blog-grid">
+      <div class="blog-card"><img src="5.jpg" alt=""><div class="blog-content"><h3>2025 market trends</h3><p>How to prepare your portfolio</p><a href="#">Read more</a></div></div>
+      <div class="blog-card"><img src="6.jpg" alt=""><div class="blog-content"><h3>The ESG imperative</h3><p>Sustainability as strategy</p><a href="#">Read more</a></div></div>
+      <div class="blog-card"><img src="7.jpg" alt=""><div class="blog-content"><h3>AI in finance</h3><p>use cases beyond hype</p><a href="#">Read more</a></div></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-full">
+    <h2>Ready to Grow Your Business?</h2>
+    <a href="#" class="btn btn-primary" style="font-size: 1.8rem;">Let's talk</a>
+  </section>
+
+  <!-- FOOTER with working quick links, icons, stylish newsletter -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color:white;">ConsultPro</h4>
+        <p><i class="fas fa-map-marker-alt contact-item"></i> 10-12 Leadenhall St, London</p>
+        <p><i class="fas fa-phone-alt contact-item"></i> +44 20 7946 0138</p>
+        <p><i class="fas fa-envelope contact-item"></i> hello@consultpro.com</p>
+      </div>
+      <div>
+        <h4 style="color:white;">Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <h4 style="color:white;">Follow us</h4>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="newsletter-card">
+        <h4>Newsletter</h4>
+        <p style="margin-bottom:1rem;">Get insights monthly</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:3rem;">© 2025 ConsultPro. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

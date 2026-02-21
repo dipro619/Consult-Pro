@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConsultPro | Business Strategy</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- loading screen -->
+  <div id="loader"><div class="loader-content">ConsultPro</div></div>
+  
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">Consult<span>Pro</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html" class="active">Services</a>
+      <a href="cases.html">Case Studies</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+  </nav>
+  
+  <!-- mobile menu panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="cases.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <!-- back to top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Service Hero Banner -->
+  <section class="service-hero">
+    <div>
+      <h1>Business <span>Strategy</span> Consulting</h1>
+      <p style="max-width:600px; margin:1rem auto;">Future-proof your organization with data‑backed growth strategies.</p>
+    </div>
+  </section>
+
+  <!-- Service Overview + key benefits (icon+text) -->
+  <section class="section">
+    <div class="overview-grid">
+      <div>
+        <h2 class="section-title">Overview</h2>
+        <p style="font-size:1.2rem;">We help leadership teams define vision, identify growth opportunities, and execute with agility. From market entry to operational turnaround, our strategic framework has been tested across 20+ industries.</p>
+      </div>
+      <div class="overview-img"></div>
+    </div>
+
+    <!-- Key benefits -->
+    <div style="margin-top:4rem;">
+      <h2 class="section-title">Key benefits</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item"><i class="fas fa-rocket"></i><h3>Rapid growth</h3><p>Average +35% revenue uplift</p></div>
+        <div class="benefit-item"><i class="fas fa-shield-alt"></i><h3>Risk mitigation</h3><p>Identify blind spots early</p></div>
+        <div class="benefit-item"><i class="fas fa-chart-pie"></i><h3>Clear roadmap</h3><p>Actionable 3‑year plan</p></div>
+        <div class="benefit-item"><i class="fas fa-users"></i><h3>Team alignment</h3><p>Executive workshops</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process steps (animated timeline) -->
+  <section class="section" style="background:var(--light-bg); border-radius: 80px;">
+    <h2 class="section-title">Our process</h2>
+    <div class="process-steps">
+      <div class="step"><span class="step-num">1</span><h4>Discovery</h4><p>Deep‑dive interviews & data audit</p></div>
+      <div class="step"><span class="step-num">2</span><h4>Analysis</h4><p>Market trends & competitive scan</p></div>
+      <div class="step"><span class="step-num">3</span><h4>Strategy</h4><p>Workshops to shape direction</p></div>
+      <div class="step"><span class="step-num">4</span><h4>Execution</h4><p>Implementation & KPIs</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ accordion -->
+  <section class="section">
+    <h2 class="section-title">Frequently asked questions</h2>
+    <div class="faq-item open"> <!-- first open as example -->
+      <div class="faq-question">How long does a typical engagement last? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Most strategy projects run 8–12 weeks, but we also offer retained advisory.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Do you work with startups or only corporates? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">We serve both – from scale‑ups to Fortune 500. Our methodology scales.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What industries do you specialise in? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Finance, healthcare, technology, industrial, and consumer goods.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Will you work with our existing team? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Absolutely. We co‑create to build internal capabilities.</div>
+    </div>
+  </section>
+
+  <!-- CTA section -->
+  <section class="cta-full">
+    <h2>Ready to transform your strategy?</h2>
+    <a href="#" class="btn-primary">Speak with an expert</a>
+  </section>
+
+  <!-- FOOTER (identical) -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color:white;">ConsultPro</h4>
+        <p><i class="fas fa-map-marker-alt contact-item"></i> 10-12 Leadenhall St, London</p>
+        <p><i class="fas fa-phone-alt contact-item"></i> +44 20 7946 0138</p>
+        <p><i class="fas fa-envelope contact-item"></i> hello@consultpro.com</p>
+      </div>
+      <div>
+        <h4 style="color:white;">Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <h4 style="color:white;">Follow us</h4>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="newsletter-card">
+        <h4>Newsletter</h4>
+        <p style="margin-bottom:1rem;">Get insights monthly</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:3rem;">© 2025 ConsultPro. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
