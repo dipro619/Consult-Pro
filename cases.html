@@ -31,7 +31,7 @@
       background-color: var(--white);
       color: var(--text-dark);
       line-height: 1.5;
-      overflow-x: hidden; /* Prevent horizontal scroll */
+      overflow-x: hidden;
       width: 100%;
       position: relative;
     }
@@ -273,28 +273,116 @@
     }
     .btn-small:hover { background: var(--gold); color: var(--navy); }
 
-    /* Featured case study (full width highlight) */
+    /* Featured case study - SYMMETRICAL FIX */
+    .featured-section {
+      padding: 2rem 2rem 4rem;
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
     .featured-case {
       background: var(--light-bg);
       border-radius: 40px;
       padding: 3rem;
-      margin: 4rem 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3rem;
+      gap: 4rem;
       align-items: center;
       width: 100%;
+      box-shadow: var(--shadow);
     }
+    
     .featured-img {
-      height: 320px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      height: 380px;
+      background: linear-gradient(135deg, #0a2540, #1a3a5f);
       border-radius: 30px;
       width: 100%;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 25px 40px -15px rgba(10,37,64,0.3);
     }
-    .featured-stat {
-      font-size: 3rem;
+    
+    .featured-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .featured-label {
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1rem;
+    }
+    
+    .featured-content h2 {
+      font-size: 2.8rem;
+      color: var(--navy);
+      line-height: 1.2;
+      margin: 0;
+    }
+    
+    .featured-description {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    
+    .featured-stats {
+      display: flex;
+      gap: 3rem;
+      margin: 1rem 0 0.5rem;
+    }
+    
+    .stat-item {
+      text-align: left;
+    }
+    
+    .stat-value {
+      font-size: 3.5rem;
       font-weight: 700;
       color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    
+    .stat-label {
+      color: var(--text-light);
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    
+    .featured-btn {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+      background: var(--navy);
+      color: white;
+      padding: 0.9rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      transition: 0.2s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .featured-btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+    
+    .featured-btn i {
+      font-size: 1rem;
+      transition: transform 0.2s;
+    }
+    
+    .featured-btn:hover i {
+      transform: translateX(5px);
     }
 
     /* footer */
@@ -350,7 +438,7 @@
       border: none;
       outline: none;
       font-size: 1rem;
-      min-width: 0; /* Prevent overflow on flex */
+      min-width: 0;
     }
     .newsletter-input button {
       background: var(--gold);
@@ -381,15 +469,54 @@
     }
     #backToTop.show { opacity: 1; }
     
+    @media (max-width: 900px) {
+      .featured-case {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 2.5rem;
+      }
+      
+      .featured-img {
+        height: 320px;
+      }
+      
+      .featured-content h2 {
+        font-size: 2.3rem;
+      }
+      
+      .stat-value {
+        font-size: 3rem;
+      }
+    }
+    
     @media (max-width: 800px) {
       .nav-links { display: none; }
       .hamburger { display: block; }
-      .featured-case { grid-template-columns: 1fr; }
       .section { padding: 3rem 1.5rem; }
       .cases-hero { padding: 3rem 1.5rem; }
       .cases-hero h1 { font-size: 2.5rem; }
       .cases-grid { grid-template-columns: 1fr; }
       .footer-grid { gap: 2rem; }
+      .featured-section { padding: 2rem 1.5rem 3rem; }
+    }
+    
+    @media (max-width: 600px) {
+      .featured-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      
+      .featured-case {
+        padding: 2rem;
+      }
+      
+      .featured-img {
+        height: 250px;
+      }
+      
+      .featured-content h2 {
+        font-size: 2rem;
+      }
     }
     
     @media (max-width: 480px) {
@@ -456,22 +583,32 @@
     </div>
   </section>
 
-  <!-- Featured / highlighted case study -->
-  <section class="section">
+  <!-- Featured / highlighted case study - SYMMETRICAL FIX -->
+  <div class="featured-section">
     <div class="featured-case">
-      <div class="featured-img" style="background: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;"></div>
-      <div>
-        <span style="color:var(--gold); font-weight:700;">FEATURED</span>
-        <h2 style="font-size:2.5rem; margin:0.5rem 0;">Global manufacturer digital overhaul</h2>
-        <p>Unified 14 legacy systems, reduced operational cost by 28%, and increased output by 43%.</p>
-        <div style="display:flex; gap:2rem; margin:2rem 0;">
-          <div><span class="featured-stat">€40M</span><br>savings</div>
-          <div><span class="featured-stat">28%</span><br>cost reduction</div>
+      <div class="featured-img" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
+      <div class="featured-content">
+        <span class="featured-label">FEATURED CASE STUDY</span>
+        <h2>Global manufacturer digital overhaul</h2>
+        <p class="featured-description">Unified 14 legacy systems, reduced operational cost by 28%, and increased output by 43% through our comprehensive digital transformation strategy.</p>
+        <div class="featured-stats">
+          <div class="stat-item">
+            <div class="stat-value">€40M</div>
+            <div class="stat-label">annual savings</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">28%</div>
+            <div class="stat-label">cost reduction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">43%</div>
+            <div class="stat-label">output increase</div>
+          </div>
         </div>
-        <a href="#" class="btn-small">Read full study <i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="featured-btn">Read full study <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
   <footer id="contact">
